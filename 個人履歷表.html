@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人履歷表 - 洪珮宸</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        /* CSS 變數定義，方便統一管理顏色和字體 */
+        :root {
+            --primary-color: #2c3e50;
+            /* 深藍灰色，用於主要文字和標題 */
+            --accent-color: #3498db;
+            /* 亮藍色，用於重點強調 */
+            --text-color: #555;
+            /* 一般文字顏色 */
+            --light-bg: #f8f9fa;
+            /* 淺背景色 */
+            --border-color: #e9ecef;
+            /* 分隔線顏色 */
+            --font-main: 'Noto Sans TC', sans-serif;
+            --font-accent: 'Montserrat', sans-serif;
+        }
+
+        /* 基礎排版與字體設定 */
+        body {
+            font-family: var(--font-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+        }
+
+        /* 履歷表容器 */
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            border-radius: 10px;
+            overflow: hidden;
+            /* 確保內部浮動元素不會溢出 */
+            display: grid;
+            /* 使用 Grid 佈局來劃分左右區塊 */
+            grid-template-columns: 1fr 2.5fr;
+            /* 左側窄，右側寬 */
+        }
+
+        /* 左側欄：個人資訊、技能等 */
+        .sidebar {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 40px 30px;
+        }
+
+        .sidebar h2 {
+            font-family: var(--font-accent);
+            font-size: 1.3em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .sidebar h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        .contact-item .icon {
+            margin-right: 10px;
+            color: var(--accent-color);
+            font-size: 1.1em;
+        }
+
+        .contact-item a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px auto;
+            display: block;
+            border: 4px solid var(--accent-color);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+
+        .skills-list,
+        .language-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .skills-list li,
+        .language-list li {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 6px 12px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+            display: inline-block;
+            /* 讓技能標籤並排顯示 */
+            margin-right: 8px;
+        }
+
+
+        /* 右側欄：主要內容 */
+        .main-content {
+            padding: 40px 50px;
+        }
+
+        .main-header {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .main-header h1 {
+            font-family: var(--font-accent);
+            font-size: 3em;
+            margin: 0;
+            color: var(--primary-color);
+            line-height: 1.1;
+        }
+
+        .main-header p {
+            font-size: 1.2em;
+            color: var(--accent-color);
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        /* 區塊標題 */
+        .section-title {
+            font-family: var(--font-accent);
+            color: var(--primary-color);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        /* 內文項目樣式 */
+        .item {
+            margin-bottom: 25px;
+            padding-left: 10px;
+            /* 稍微縮排，增加層次感 */
+            border-left: 3px solid var(--border-color);
+            /* 左側分隔線 */
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+            /* 移除最後一個項目底部的間距 */
+        }
+
+        .item h3 {
+            margin: 0;
+            font-size: 1.3em;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .item .subtitle {
+            font-size: 1em;
+            color: var(--accent-color);
+            margin: 5px 0;
+            font-weight: 500;
+        }
+
+        .item ul {
+            padding-left: 25px;
+            margin-top: 10px;
+            list-style: disc;
+            /* 使用實心圓點 */
+            color: var(--text-color);
+        }
+
+        .item ul li {
+            margin-bottom: 8px;
+        }
+
+        .date {
+            float: right;
+            color: #999;
+            font-style: italic;
+            font-size: 0.95em;
+        }
+
+        /* 清除浮動 */
+        .item::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* 個人簡介段落 */
+        .about-me p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        /* 證照列表專用 */
+        .certificate-list {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 25px;
+        }
+        
+        .certificate-list li {
+            background-color: var(--light-bg);
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            border-left: 4px solid var(--accent-color);
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+
+        /* ICON 字體，需要引入 */
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+    </style>
+</head>
+
+<body>
+
+    <div class="resume-container">
+        <div class="sidebar">
+            <img src=1.jpg
+                class="profile-picture">
+
+            <h2 style="margin-top:0;">聯絡方式</h2>
+            <div class="contact-item">
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+                <a href="mailto:penny960120@gmail.com">penny960120@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <span class="icon"><i class="fas fa-phone-alt"></i></span>
+                <span>0910-257-697</span>
+            </div>
+            <h2>學歷</h2>
+            <ul class="skills-list">
+                <li>國立高雄科技大學-國際智慧金融技優專班</li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <header class="main-header">
+                <h1>洪珮宸</h1>
+            </header>
+
+            <section class="about-me">
+                <h2 class="section-title">關於我</h2>
+                <p>
+                    我一直對投資很有興趣，想多了解像股票、理財這些東西是怎麼運作的。因為想學更多相關知識，也希望懂得如何管理和運用錢，所以最後選擇來高科技優金融。
+                </p>
+            </section>
+
+            <section>
+                <h2 class="section-title">專業技能證照</h2>
+
+                <div class="item">
+                    <h3>會計與金融</h3>
+                    <ul class="certificate-list">
+                        <li>丙級:會計事務－人工記帳</li>
+                        <li>丙級:會計事務－資訊</li>
+                        <li>TQC-OA:電腦會計(IFRS)</li>
+                        <li>商教會會計能力測驗（第三級）</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h3>電腦軟體與應用</h3>
+                    <ul class="certificate-list">
+                        <li>乙級:電腦軟體應用</li>
+                        <li>丙級:電腦軟體應用</li>
+                        <li>TQC-OA:Word</li>
+                        <li>TQC-OA:Excel</li>
+                        <li>TQC-OA:PowerPoint</li>
+                        <li>TQC-OA:中文輸入</li>
+                        <li>TQC-OA:數字輸入</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>

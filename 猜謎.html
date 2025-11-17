@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【極限挑戰】專業級諧音梗猜謎機 - V3.0</title>
+    <style>
+        /* ==================== 專業酷炫基礎樣式 ==================== */
+        body {
+            font-family: '微軟正黑體', 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            /* 酷炫深色背景 */
+            background-color: #1a1a2e;
+            color: #e5e5e5;
+            min-height: 100vh;
+            margin: 0;
+            transition: background-color 0.5s;
+        }
+
+        #quiz-container {
+            background: #2a2a4a;
+            /* 深藍色卡片背景 */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 650px;
+            text-align: center;
+            position: relative;
+            border: 3px solid #6c63ff;
+            /* 專業邊框 */
+        }
+
+        h1 {
+            color: #00bcd4;
+            /* 鮮豔標題色 */
+            margin-bottom: 25px;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px rgba(0, 188, 212, 0.7);
+        }
+
+        #question-counter {
+            color: #bbbbbb;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+        }
+
+        /* 題目展示區 */
+        #question-display {
+            background-color: #3e3e68;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            font-size: 1.5em;
+            font-weight: bold;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 輸入與按鈕樣式 */
+        #input-area {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        #user-input {
+            padding: 15px;
+            border: 2px solid #6c63ff;
+            border-radius: 10px;
+            width: 60%;
+            max-width: 300px;
+            font-size: 1.1em;
+            background-color: #1a1a2e;
+            color: white;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        #user-input:focus {
+            outline: none;
+            border-color: #00bcd4;
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
+        }
+
+        button {
+            padding: 12px 22px;
+            margin: 8px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px #00000030;
+        }
+
+        button:active {
+            box-shadow: 0 1px #00000030;
+            transform: translateY(3px);
+        }
+
+        #submit-btn {
+            background-color: #6c63ff;
+            color: white;
+        }
+
+        #submit-btn:hover {
+            background-color: #5850e6;
+        }
+
+        #hint-btn {
+            background-color: #ffc107;
+            color: #333;
+        }
+
+        #hint-btn:hover {
+            background-color: #e0a800;
+        }
+
+        #skip-btn {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        #skip-btn:hover {
+            background-color: #c82333;
+        }
+
+
+        /* 反饋圖片與提示 */
+        #feedback-image {
+            width: 100%;
+            max-width: 300px;
+            margin: 20px auto;
+            border-radius: 10px;
+            display: none;
+            border: 5px solid transparent;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            transition: all 0.5s;
+        }
+
+        .correct-border {
+            border-color: #00bcd4 !important;
+        }
+
+        .wrong-border {
+            border-color: #dc3545 !important;
+        }
+
+        #hint-display {
+            min-height: 25px;
+            margin-top: 15px;
+            color: #4cd137;
+            font-size: 1.1em;
+        }
+
+        /* ==================== 特效 CSS ==================== */
+
+        /* 成功特效: 模擬煙火脈衝和彩色星星（簡單粒子） */
+        .fireworks-effect {
+            animation: pulse-success 0.5s 3;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes pulse-success {
+            0% {
+                box-shadow: 0 0 15px 5px #00bcd4;
+            }
+
+            50% {
+                box-shadow: 0 0 30px 15px #ffc107;
+            }
+
+            100% {
+                box-shadow: 0 0 15px 5px #6c63ff;
+            }
+        }
+
+        /* 失敗特效: 劇烈震動和背景變紅 */
+        .fail-effect {
+            animation: shake 0.5s;
+            background-color: #332429 !important;
+            border-color: #dc3545 !important;
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            10%,
+            30%,
+            55%,
+            75%,
+            90% {
+                transform: translateX(-15px);
+            }
+
+            20%,
+            40%,
+            65%,
+            85%,
+            100% {
+                transform: translateX(15px);
+            }
+        }
+
+        /* 簡單的煙火星星粒子 (CSS Only) */
+        .star-particle {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: yellow;
+            border-radius: 50%;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 100;
+            animation: shoot 1s forwards;
+        }
+
+        @keyframes shoot {
+            0% {
+                opacity: 1;
+                transform: translate(0, 0) scale(1);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(var(--x), var(--y)) scale(0.5);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="quiz-container">
+        <h1>【諧音梗猜謎挑戰】</h1>
+        <p id="question-counter">載入中...</p>
+
+        <div id="question-display"></div>
+
+        <div id="input-area">
+            <input type="text" id="user-input" placeholder="請輸入您猜測的答案" autofocus>
+            <button id="submit-btn" onclick="checkAnswer()">提交</button>
+        </div>
+
+        <div class="button-group">
+            <button id="hint-btn" onclick="showHint()">需要提示 (HINT)</button>
+            <button id="skip-btn" onclick="skipQuestion()">略過 (SKIP)</button>
+        </div>
+
+        <p id="hint-display"></p>
+
+        <img id="feedback-image" src="" alt="結果反饋圖片">
+    </div>
+
+    <script>
+        // ==================== 題目資料庫 (純文字版) ====================
+        const questions = [
+            {
+                // 什麼水果視力最差
+                question: "Q: 什麼水果視力最差？",
+                answer: ["芒果"], // 諧音：「盲果」 (看不見)
+                hint: "提示：和「看不見」或「眼睛」有關。",
+                description: "因為它「盲果」(盲，代表看不見，故視力最差)。"
+            },
+            {
+                // 蚊子不叮12生肖中的哪一種動物
+                question: "Q: 蚊子不叮12生肖中的哪一種動物？",
+                answer: ["狗"], // 諧音：「不叮狗」諧音「布丁狗」 (卡通角色名或甜點)
+                hint: "提示：一種甜點或卡通角色。",
+                description: "「不叮狗」諧音「布丁狗」 (卡通角色名或甜點)。"
+            },
+            {
+                // 哪位公主的馬車
+                question: "Q: 哪一位公主的馬車最不怕刮傷？",
+                answer: ["灰姑娘"],
+                hint: "提示：她搭的交通工具很難被刮傷。",
+                description: "灰姑娘，因為她搭南瓜馬車 (南瓜=難刮)。"
+            },
+            {
+                // 如何讓麻雀安靜下來？
+                question: "Q: 如何讓麻雀安靜下來？",
+                answer: ["壓牠一下"],
+                hint: "提示：一個動作和一個詞彙。",
+                description: "「壓牠一下」諧音「鴉雀無聲」。"
+            },
+            {
+                // 狼掉到冰水裡
+                question: "Q: 一隻狼掉到冰水裡會變成什麼？",
+                answer: ["檳榔"],
+                hint: "提示：兩個字的食物，跟『冰』有關。",
+                description: "冰狼 (檳榔)。"
+            },
+            {
+                // 一隻熊朝你走過來
+                question: "Q: 一隻熊朝你走過來，猜一個成語",
+                answer: ["有備而來"],
+                hint: "提示：熊的英文發音。",
+                description: "「有備而來」諧音「有BEAR來」 (BEAR即「熊」)。"
+            },
+            {
+                // 小白兔、小紅帽、小黃瓜一起去搭飛機，誰會吐？
+                question: "Q: 小白兔、小紅帽、小黃瓜一起去搭飛機，誰會吐？",
+                answer: ["小白兔"],
+                hint: "提示：答案裡有「吐」這個字。",
+                description: "諧音「小白吐」。"
+            },
+            {
+                // 鹿跟車
+                question: "Q: 鹿跟車誰會贏?",
+                answer: ["鹿"],
+                hint: "提示：一個戶外活動的名稱。",
+                description: "鹿會贏，因為「露營車」。"
+            },
+            {
+                // 什麼線
+                question: "Q: 猴子不喜歡什麼線？",
+                answer: ["平行線"],
+                hint: "提示：跟數學有關。",
+                description: "平行線，因為沒有「香交」(相交)。"
+            },
+            {
+                // 什麼動物
+                question: "Q: 什麼動物常常被貼在牆上？",
+                answer: ["海豹"],
+                hint: "提示：海裡的生物。",
+                description: "海豹 (海報)。"
+            }
+        ];
+
+        // ==================== 全域變數和設定 (請替換圖片 URL) ====================
+        let currentQuestionIndex = 0;
+        const TOTAL_QUESTIONS = questions.length;
+
+        // **請務必替換這些 URL**
+        const CORRECT_IMG_URL = "https://via.placeholder.com/300x200/4cd137/FFFFFF?text=答對咯！專業！";
+        const WRONG_IMG_URL = "https://via.placeholder.com/300x200/dc3545/FFFFFF?text=答錯咯！搞笑！";
+
+        const elements = {
+            counter: document.getElementById('question-counter'),
+            questionDisplay: document.getElementById('question-display'),
+            userInput: document.getElementById('user-input'),
+            feedbackImage: document.getElementById('feedback-image'),
+            hintDisplay: document.getElementById('hint-display'),
+            quizContainer: document.getElementById('quiz-container'),
+            submitBtn: document.getElementById('submit-btn'),
+            hintBtn: document.getElementById('hint-btn')
+        };
+
+        // ==================== 核心功能 ====================
+
+        function loadQuestion() {
+            if (currentQuestionIndex >= TOTAL_QUESTIONS) {
+                elements.quizContainer.innerHTML = "<h2>🎉 挑戰結束！你是諧音梗專家！ 🎉</h2><p>感謝您的參與，請重新整理頁面開始下一輪挑戰。</p>";
+                return;
+            }
+
+            const q = questions[currentQuestionIndex];
+
+            // 更新顯示
+            elements.counter.textContent = `第 ${currentQuestionIndex + 1} 題 / 共 ${TOTAL_QUESTIONS} 題 - 狀態：進行中`;
+            elements.questionDisplay.textContent = q.question;
+
+            // 重置狀態
+            elements.userInput.value = '';
+            elements.hintDisplay.textContent = '';
+            elements.feedbackImage.style.display = 'none';
+            elements.feedbackImage.src = '';
+            elements.feedbackImage.classList.remove('correct-border', 'wrong-border');
+            elements.quizContainer.classList.remove('fireworks-effect', 'fail-effect');
+
+            // 啟用按鈕/輸入
+            elements.userInput.disabled = false;
+            elements.submitBtn.disabled = false;
+            elements.hintBtn.disabled = false;
+
+            elements.userInput.focus();
+        }
+
+        function generateStarParticle(count) {
+            for (let i = 0; i < count; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star-particle');
+
+                // 隨機位置
+                const x = Math.random() * elements.quizContainer.offsetWidth;
+                const y = Math.random() * elements.quizContainer.offsetHeight;
+                star.style.left = `${x}px`;
+                star.style.top = `${y}px`;
+
+                // 隨機發射目標 (擴散)
+                const dx = (Math.random() - 0.5) * 400; // -200 到 200
+                const dy = (Math.random() - 0.5) * 400;
+                star.style.setProperty('--x', `${dx}px`);
+                star.style.setProperty('--y', `${dy}px`);
+
+                star.style.backgroundColor = ['#ffc107', '#00bcd4', '#6c63ff', '#ffffff'][Math.floor(Math.random() * 4)];
+
+                elements.quizContainer.appendChild(star);
+
+                // 動畫結束後移除元素
+                star.addEventListener('animationend', () => {
+                    star.remove();
+                });
+            }
+        }
+
+        function checkAnswer() {
+            if (elements.userInput.disabled) return; // 防止重複提交
+
+            const userAnswer = elements.userInput.value.trim().toLowerCase().replace(/[，,。！]/g, '');
+            const correctAnswers = questions[currentQuestionIndex].answer.map(a => a.toLowerCase().replace(/[，,。！]/g, ''));
+
+            if (correctAnswers.includes(userAnswer)) {
+                handleCorrect();
+            } else {
+                handleWrong();
+            }
+        }
+
+        function handleCorrect() {
+            elements.feedbackImage.src = CORRECT_IMG_URL;
+            elements.feedbackImage.classList.add('correct-border');
+            elements.feedbackImage.style.display = 'block';
+
+            // 成功特效：脈衝 + 粒子
+            elements.quizContainer.classList.add('fireworks-effect');
+            generateStarParticle(25);
+
+            // 禁用輸入和提交
+            elements.userInput.disabled = true;
+            elements.submitBtn.disabled = true;
+
+            setTimeout(() => {
+                currentQuestionIndex++;
+                loadQuestion();
+            }, 3000);
+        }
+
+        function handleWrong() {
+            elements.feedbackImage.src = WRONG_IMG_URL;
+            elements.feedbackImage.classList.add('wrong-border');
+            elements.feedbackImage.style.display = 'block';
+
+            // 失敗特效：震動
+            elements.quizContainer.classList.add('fail-effect');
+
+            // 移除失敗效果，讓用戶可以再次嘗試
+            setTimeout(() => {
+                elements.quizContainer.classList.remove('fail-effect');
+            }, 500);
+        }
+
+        function showHint() {
+            elements.hintDisplay.textContent = "HINT: " + questions[currentQuestionIndex].hint;
+            elements.hintBtn.disabled = true;
+        }
+
+        function skipQuestion() {
+            const q = questions[currentQuestionIndex];
+            const answerText = q.answer.join(" 或 ");
+
+            elements.feedbackImage.src = WRONG_IMG_URL;
+            elements.feedbackImage.classList.add('wrong-border');
+            elements.feedbackImage.style.display = 'block';
+
+            elements.hintDisplay.innerHTML = `<strong>答案揭曉：${answerText}</strong><br><span style="color:#bbbbbb;">(解析：${q.description})</span>`;
+
+            // 禁用所有互動
+            elements.userInput.disabled = true;
+            elements.submitBtn.disabled = true;
+            elements.hintBtn.disabled = true;
+
+            // 略過視為失敗，給予震動效果
+            elements.quizContainer.classList.add('fail-effect');
+
+            setTimeout(() => {
+                currentQuestionIndex++;
+                loadQuestion();
+            }, 5000);
+        }
+
+        // 鍵盤 Enter 鍵觸發提交
+        elements.userInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                checkAnswer();
+            }
+        });
+
+        // 啟動遊戲
+        window.onload = loadQuestion;
+    </script>
+
+</body>
+
+</html>
