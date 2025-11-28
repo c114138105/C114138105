@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn_show").on("click", function(){
+                $("#img_dog").show(500);});
+            $("#btn_hide").on("click", function(){
+                $("#img_dog").hide("slow");});
+            $("#btn_fadein").on("click", function(){
+                $("#img_dog").fadeIn("fast");});
+            $("#btn_fadeout").on("click", function(){
+                $("#img_dog").fadeOut("normal");});
+            $("#btn_fadetoggle").on("click", function(){
+                $("#img_dog").fadeToggle(1500);});
+            $("#btn_slidedown").on("click", function(){
+                $("#img_dog").slideDown();});
+            $("#btn_slideup").on("click", function(){
+                $("#img_dog").slideUp("fast");});
+            $("#btn_slidetoggle").on("click", function(){
+                $("#img_dog").slideToggle("slow");});});
+    </script>
+</head>
+<body>
+    <p>
+        <input type="button" id="btn_show" value="顯示" />
+        <input type="button" id="btn_hide" value="隱藏(慢速)" />
+        <input type="button" id="btn_fadein" value="淡入(快速)" />
+        <input type="button" id="btn_fadeout" value="淡出(正常)" />
+    </p>
+    <p>
+        <input type="button" id="btn_fadetoggle" value="淡入/淡出 切換(1.5秒)" />
+        <input type="button" id="btn_slidedown" value="向下滑" />
+        <input type="button" id="btn_slideup" value="向上滑(快速)" />
+        <input type="button" id="btn_slidetoggle" value="滑動 切換(慢速)" />
+    </p>
+    <p><img src="img/image1.jpg" id="img_dog"  /></p>
+</body>
+</html>
