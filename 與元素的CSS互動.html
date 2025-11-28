@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .btn {
+            border: solid 1px;
+            border-color: black;
+            background-color: white;
+            padding: 10px 20px;    }
+    </style>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>
+        function fnOff() {
+            $(".btn").css("border-color", "white");
+            $(".btn").css("color", "white");
+            $(".btn").css("background-color", "black");
+            $("body").css("background-color", "black");
+        }
+        function fnOn() {
+            $(".btn").css("border-color", "black");
+            $(".btn").css("color", "black");
+            $(".btn").css("background-color", "white");
+            $("body").css("background-color", "white");
+        }
+</script>
+</head>
+<body>
+<input type="button" value="關燈" class="btn" onclick="fnOff();">
+<input type="button" value="開燈" class="btn" onclick="fnOn();">
+</body>
+</html>

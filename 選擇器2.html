@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 指定h1, MyIdA的Id識別名稱與套用 .MyClassP類別的DOM元素
+            // 背景色指定為粉紅色
+            $("h1 , #MyIdA , .MyClassP").css("background-color", "pink");
+        });
+    </script>
+</head>
+<body>
+    <h1>大大限公司</h1>
+    <a href="http://dtc-tech.com.tw" id="MyIdA">網站連結</a>
+    <p class="MyClassP">台中市忠明南路</p>
+</body>
+</html>
+<script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+             // (父子階層選擇器)指定 div 下一層 h4 的背景色為黃色
+            $("div > h4").css("background-color", "yellow");
+             // (祖孫階層選擇器)指定 div 內所有 li 的背景色為粉紅色
+            $("div  li").css("background-color", "pink");
+            // (兄弟階層選擇器)指定與 h4 同層的 p 的背景色為淺咖啡色
+            $("h4 ~ p").css("background-color", "powderblue");
+            // (前後階層選擇器)指定排在p 旁邊 ul 的前景色為藍色
+             $("p + ul").css("color", "blue");
+         });
+    </script>
+</head>
+<body>
+    <div>
+        <h3>木葉忍者-第七班</h3>
+        <h4>班導：旗木卡卡西</h4>
+        <p>XBox One遊戲：火影忍者:終極風暴</p>
+        <p>PS 4遊戲：新火影世代-慕留人傳</p>
+        <ul>
+            <li>漩渦鳴人</li>
+            <li>宇智波佐助</li>
+            <li>春野櫻</li>
+        </ul>
+    </div>
+</body>

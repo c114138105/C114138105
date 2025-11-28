@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        //網頁文件載入完成執行
+        $(document).ready(function () {
+            //按下 [對答] 鈕執行
+            $("#btnCheck").click(function () {
+                var ans = $("#txtAns").val();
+                var msg = "錯誤！！提示：打電話英文。";
+                if (ans == "苦瓜") {
+                    msg = "正解:苦瓜(call 龜)";
+                }
+                $("span").text(msg);
+            })
+// txtAns文字欄使用on綁定blur與focus事件
+$("#txtAns").on( {
+                    "blur": function () {
+                        $("#txtAns").css("background", "yellow");
+                    },
+                    "focus": function () {
+                        $("#txtAns").css("background", "pink");
+                    }
+                });
+        });
+    </script>
+</head>
+<body>
+    <h2>猜燈謎遊戲</h2>
+    <p>燈謎：電話給烏龜(猜蔬菜)</p>
+    <p>答案：<input type="text" id="txtAns" /></p>
+    <p><input type="button" value="對答" id="btnCheck" /></p>
+    <span></span>
+</body>
+</html>

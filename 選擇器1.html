@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        //按下 [送出] 鈕執行fnSend函式 
+        function fnSend() {
+            // 宣告name, email, addr, output變數 
+            var name, email, addr, output;
+            name = $("#txtName").val(); //取得txtName欄位值指定給name
+            email = $("#txtEmail").val();   //取得txtEmail欄位值指定給email
+            addr = $("#txtAddr").val();  //取得txtAddr欄位值指定給addr
+            // 將表單欄位的資訊指定給output
+            output = "姓名：" + name + "\n";
+            output += "信箱：" + email + "\n";
+            output += "地址：" + addr + "\n";
+            alert(output);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <p>姓名:<input type="text" id="txtName"></p>
+        <p>信箱:<input type="text" id="txtEmail"></p>
+        <p>地址:<input type="text" id="txtAddr"></p>
+        <p><input type="button" onclick="fnSend()" value="送出"></p>
+    </form>
+</body>
+</html>
+<style>
+    .selProduct{
+        background:#b6ff00;
+    }
+</style>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>
+    // 按下 [訂購] 鈕執行此函式 
+     function fnOrder(){
+         var num, product;
+         //取得txtNum文字欄的值
+         num = $("#txtNum").val();
+         //取得套用.selProduct類別的欄位值
+         product = $(".selProduct").val();             
+         alert("您訂購了 " + num + " 個 " + product);
+     }
+</script>
+</head>
+<body>
+<form>
+    <p>數量：<input type="number" id="txtNum"></p>     
+    <p>商品名稱：
+        <select class="selProduct">
+            <option value="iPhone X">iPhone 12</option>
+            <option value="switch">switch</option>
+            <option value="XBOX One">XBOX One</option>
+            <option value="PS5">PS5</option>
+        </select>
+    </p>
+    <p><input type="button" onclick="fnOrder()" value="訂購"></p>       
+</form>
+</body>
+<script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+         function fnSend(){
+             var area;
+             //使用屬性選擇器取得欄位值
+             //將選項鈕name等於radArea被選取的欄位值指定給area
+             area = $("[name=radArea]:checked").val();
+             if (area == 0) {
+                alert("您居住在北部!");
+             } else if (area == 1) {
+                 alert ("您居住在中部!");
+             } else if (area == 2) {
+                 alert ("您居住在南部!");
+             } else {
+                 alert ("您居住在東部!");
+             }
+         }
+    </script>
+</head>
+<body>
+    <p>居住區域:</p>
+    <input type="radio" name="radArea" value="0" checked />北部
+    <input type="radio" name="radArea" value="1" />中部
+    <input type="radio" name="radArea" value="2" />南部
+    <input type="radio" name="radArea" value="3" />東部
+    <p><input type="button" onclick="fnSend()" value="送出"></p>
+</body>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 指定h1, MyIdA的Id識別名稱與套用 .MyClassP類別的DOM元素
+            // 背景色指定為粉紅色
+            $("h1 , #MyIdA , .MyClassP").css("background-color", "pink");
+        });
+    </script>
+

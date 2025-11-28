@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8" />
+   <title></title>
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script>
+       var index = 0;  // 宣告index用來代表目前是第幾筆記錄，0表示第一筆
+       // 宣告img, title, info用來放置三筆夜市圖片、夜市名稱、夜市說明
+       var img = new Array("image1.jpg", "image2.jpg", "image3.jpg");
+       var title = new Array("第一張", "第二張", "第三張");
+       var info = new Array("薩摩耶", "邊牧", "柯基");
+
+       function toHTML(index) { //建立toHTML()函式用來傳回HTML的夜市內容
+           var hm = "<img src='img/" + img[index] + "' width='125' style='float:left;margin:10px;'>";
+           hm += "<h3>" + title[index] + "</h3>";
+           hm += "<p>" + info[index] + "</p>";
+           return hm;
+       }
+
+
+       $("#div_cont").html(toHTML(index));//將toHTML()函式取得的夜市資料呈現在#div_cont元素上})//按下一篇鈕執行
+
+       function fnNext() { //移往下一筆
+           index++; //判斷是否超出最後一筆
+           if (index >= img.length) { //指定從第一筆開始
+               index = 0; }
+               //將toHTML()函式取得的夜市資料呈現在#div_cont元素上
+               $("#div_cont").html(toHTML(index));
+           }
+      
+
+
+   </script>
+
+</head>
+
+<body>
+
+   <div id="div_cont" style="border-style:solid"></div>
+   <p><input type="button" onclick="fnNext();" value="下一篇"></p>
+
+</body>
+
+</html>
