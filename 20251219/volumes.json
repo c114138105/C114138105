@@ -1,0 +1,718 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1000000,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "kutGEQAAQBAJ",
+      "etag": "UrnwqX4ZZwM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/kutGEQAAQBAJ",
+      "volumeInfo": {
+        "title": "Chameleon Care Handbook",
+        "subtitle": "An All-inclusive Guide to Keeping Your Chameleon Happy and Healthy",
+        "authors": [
+          "Barrett Williams",
+          "ChatGPT"
+        ],
+        "publisher": "Barrett Williams",
+        "publishedDate": "2025-02-11",
+        "description": "**Chameleon Care Handbook Your Ultimate Guide to Happy and Healthy Chameleons** Are you captivated by the enchanting world of chameleons and eager to start your journey as a responsible chameleon owner? Look no further than the \"Chameleon Care Handbook,\" the comprehensive guide crafted just for you. This eBook is the ultimate resource for both novice and experienced chameleon enthusiasts, providing everything you need to know for ensuring your chameleon thrives. Delve into the fascinating world of chameleon species with an introduction that highlights the unique aspects of different breeds and the importance of providing the right care and environment. From choosing the perfect chameleon to creating an optimal habitat, every detail is covered with precision. Whether you're pondering which chameleon suits your lifestyle or seeking tips on finding a reputable breeder, this handbook walks you through the decision-making process with ease. Learn how to set up the perfect habitat with guidance on selecting the right enclosure, maintaining the ideal temperature and humidity, and incorporating essential decorations and hideouts. Lighting and heating essentials are explained thoroughly, helping you understand UVB lighting needs and effective heat source options to ensure your chameleon’s well-being. Feeding time becomes a breeze with sections on diet essentials across different life stages, safe and unsafe insect choices, and tips on supplements and gut loading. The eBook also provides invaluable handling and bonding techniques, ensuring you and your chameleon enjoy a stress-free relationship. Stay a step ahead with chapters dedicated to recognizing and addressing health issues while exploring the intriguing behaviors of your chameleon companion. For those considering breeding, the beginner's guide draws you into the world of mating and raising hatchlings. Discover the excitement of enrichment and environmental stimulation, while avoiding common care mistakes with insights from experienced enthusiasts. With sections on legal and ethical considerations and a plethora of additional resources, the \"Chameleon Care Handbook\" is your gateway to a fulfilling chameleon-keeping adventure. Embark on a lifelong commitment to your chameleon’s health and happiness today.",
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 103,
+        "printType": "BOOK",
+        "categories": [
+          "Pets"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=kutGEQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=kutGEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.tw/books?id=kutGEQAAQBAJ&pg=PT95&dq=chameleon&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=kutGEQAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=kutGEQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "TW",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 96,
+          "currencyCode": "TWD"
+        },
+        "retailPrice": {
+          "amount": 80,
+          "currencyCode": "TWD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=kutGEQAAQBAJ&rdid=book-kutGEQAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 96000000,
+              "currencyCode": "TWD"
+            },
+            "retailPrice": {
+              "amountInMicros": 80000000,
+              "currencyCode": "TWD"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "TW",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.tw/books/download/Chameleon_Care_Handbook-sample-pdf.acsm?id=kutGEQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=kutGEQAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003echameleon\u003c/b\u003e species demand. Each chapter has equipped you with knowledge, helping you realize that the nuances of \u003cb\u003echameleon\u003c/b\u003e care are essential for ensuring their well-being. This knowledge forms the foundation for a successful, ongoing&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "CDNFAAAAIAAJ",
+      "etag": "vx5/BdsQMk4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/CDNFAAAAIAAJ",
+      "volumeInfo": {
+        "title": "The Chameleon",
+        "subtitle": "A Comedy in Three Acts",
+        "authors": [
+          "Josephine Preston Peabody"
+        ],
+        "publishedDate": "1917",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UCAL:$B299208"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 84,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.5.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=CDNFAAAAIAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=CDNFAAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.tw/books?id=CDNFAAAAIAAJ&pg=PA4&dq=chameleon&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=CDNFAAAAIAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=CDNFAAAAIAAJ"
+      },
+      "saleInfo": {
+        "country": "TW",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=CDNFAAAAIAAJ&rdid=book-CDNFAAAAIAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "TW",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com.tw/books/download/The_Chameleon.epub?id=CDNFAAAAIAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com.tw/books/download/The_Chameleon.pdf?id=CDNFAAAAIAAJ&hl=&output=pdf&sig=ACfU3U1nWBJSYc0s2sRl01y80fnBaVef_Q&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=CDNFAAAAIAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... truth is rain- bow , truth is piebald . SCENE II . Morning . How you may catch a \u003cb\u003eChameleon\u003c/b\u003e , if you get up early . SCENE throughout : - The HOPEFAR Library . THE \u003cb\u003eCHAMELEON\u003c/b\u003e ACT I. SCENE : -The Hopefars &#39; Library THE \u003cb\u003eCHAMELEON\u003c/b\u003e ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Ag5CAQAAMAAJ",
+      "etag": "207cnJQg75E",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Ag5CAQAAMAAJ",
+      "volumeInfo": {
+        "title": "The Chameleon",
+        "authors": [
+          "James Weber Linn"
+        ],
+        "publishedDate": "1903",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "NYPL:33433112009562"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 444,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.6.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Ag5CAQAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Ag5CAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.tw/books?id=Ag5CAQAAMAAJ&pg=PP6&dq=chameleon&hl=&cd=3&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=Ag5CAQAAMAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Ag5CAQAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "TW",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=Ag5CAQAAMAAJ&rdid=book-Ag5CAQAAMAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "TW",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com.tw/books/download/The_Chameleon.epub?id=Ag5CAQAAMAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Ag5CAQAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "James Weber Linn. | | 는 THE \u003cb\u003eCHAMELEON\u003c/b\u003e su Ву James Weber Linn Author of."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "styhCX7pvHgC",
+      "etag": "BCGgUu1X+0I",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/styhCX7pvHgC",
+      "volumeInfo": {
+        "title": "The Chameleon",
+        "authors": [
+          "Jake Miller"
+        ],
+        "publisher": "The Rosen Publishing Group, Inc",
+        "publishedDate": "2005-12-15",
+        "description": "This high-interest Science title is one of the 4 titles sold in a Book Pack as a part of the Tony Stead Independent Reading Reptiles and Amphibians Theme Set.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781404255739"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1404255737"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 29,
+        "printType": "BOOK",
+        "categories": [
+          "Nature"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.3.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=styhCX7pvHgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=styhCX7pvHgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.tw/books?id=styhCX7pvHgC&pg=PA13&dq=chameleon&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com.tw/books?id=styhCX7pvHgC&dq=chameleon&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Chameleon.html?hl=&id=styhCX7pvHgC"
+      },
+      "saleInfo": {
+        "country": "TW",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "TW",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.tw/books/download/The_Chameleon-sample-pdf.acsm?id=styhCX7pvHgC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=styhCX7pvHgC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003echameleon&#39;s\u003c/b\u003e skin . Under the top layer are special cells that contain different colors like red , yellow , and blue . When a \u003cb\u003echameleon\u003c/b\u003e changes color , some of the cells become smaller . This lets other cells get bigger . For example&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "0Xc7AQAAMAAJ",
+      "etag": "mfk77xfCuc0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/0Xc7AQAAMAAJ",
+      "volumeInfo": {
+        "title": "The Chameleon's Dish",
+        "subtitle": "A Book of Lyrics and Ballads Founded on the Hopes and Illusions of Mankind, Together with Other Poems",
+        "authors": [
+          "Theodore Tilton"
+        ],
+        "publishedDate": "1893",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "CORNELL:31924022200178"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 376,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.6.7.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=0Xc7AQAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=0Xc7AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.tw/books?id=0Xc7AQAAMAAJ&pg=PP9&dq=chameleon&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=0Xc7AQAAMAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=0Xc7AQAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "TW",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=0Xc7AQAAMAAJ&rdid=book-0Xc7AQAAMAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "TW",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com.tw/books/download/The_Chameleon_s_Dish.epub?id=0Xc7AQAAMAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=0Xc7AQAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eChameleon&#39;s\u003c/b\u003e Dish A BOOK OF LILI ハ LYRICS AND BALLADS FOUNDED ON THE HOPES AND ILLUSIONS OF MANKIND Together with other Poems By THEODORE TILTON The King . How fares our cousin Hamlet ? Hamlet . Excellent , i &#39; faith of the \u003cb\u003echameleon&#39;s\u003c/b\u003e&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "vaCwgju0_ikC",
+      "etag": "c/fg8x9XXgI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/vaCwgju0_ikC",
+      "volumeInfo": {
+        "title": "The Chameleon Consultant",
+        "subtitle": "Culturally Intelligent Consultancy",
+        "authors": [
+          "Andrew Holmes"
+        ],
+        "publisher": "Gower Publishing, Ltd.",
+        "publishedDate": "2002",
+        "description": "By understanding the organizational culture of a client, consultants will be in a much stronger position to sell and deliver their consultancy services. Yet this is something which is rarely done and never to a depth which would make it meaningful at a departmental level. This book eliminates this major gap in the consultant's and consultancy firm's knowledge.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0566084074"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780566084072"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 190,
+        "printType": "BOOK",
+        "categories": [
+          "Business & Economics"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.7.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=vaCwgju0_ikC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=vaCwgju0_ikC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.tw/books?id=vaCwgju0_ikC&pg=PP4&dq=chameleon&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com.tw/books?id=vaCwgju0_ikC&dq=chameleon&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Chameleon_Consultant.html?hl=&id=vaCwgju0_ikC"
+      },
+      "saleInfo": {
+        "country": "TW",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "TW",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.tw/books/download/The_Chameleon_Consultant-sample-pdf.acsm?id=vaCwgju0_ikC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=vaCwgju0_ikC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003echameleon\u003c/b\u003e - like behaviour is fundamental to successful consulting , and yet it is neither widely understood nor practised within the profession . Until ... \u003cb\u003eChameleon\u003c/b\u003e Consultant This One F42S - C14-3A7L :: To The \u003cb\u003eChameleon\u003c/b\u003e Consultant."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "z0lBAQAAMAAJ",
+      "etag": "1lOieqEqouM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/z0lBAQAAMAAJ",
+      "volumeInfo": {
+        "title": "The Chameleon",
+        "authors": [
+          "Sherwin-Williams Company"
+        ],
+        "publishedDate": "1915",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "NYPL:33433111532333"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 580,
+        "printType": "BOOK",
+        "categories": [
+          "Industries"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.6.6.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=z0lBAQAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=z0lBAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.tw/books?id=z0lBAQAAMAAJ&pg=RA5-PP37&dq=chameleon&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=z0lBAQAAMAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=z0lBAQAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "TW",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=z0lBAQAAMAAJ&rdid=book-z0lBAQAAMAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "TW",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com.tw/books/download/The_Chameleon.epub?id=z0lBAQAAMAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=z0lBAQAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eChameleon\u003c/b\u003e Published Monthly by THE SHERWIN - WILLIAMS CO . all my trusts . I will master the smallest detail . I will boost - not knock . I will do not intend . I will work because I like to , not watch the hands of the clock . I will&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "vFwaAQAAMAAJ",
+      "etag": "ncowW0chMTc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/vFwaAQAAMAAJ",
+      "volumeInfo": {
+        "title": "Chameleon",
+        "authors": [
+          "Barbara Erasmus"
+        ],
+        "publisher": "Porcupine Press Trading Under Dgr Writing & Resear",
+        "publishedDate": "2008",
+        "description": "Ever the perfect wife, Leigh Franklin exchanges her own blossoming career as a hedge-fund trader to become the perfect mother to her adored daughter. She struggles to maintain her up-market profile as she is forced to face the consequences of both white-collar crime and an unwanted pregnancy.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "IND:30000111370668"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 210,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.4.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=vFwaAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=vFwaAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.tw/books?id=vFwaAQAAMAAJ&q=chameleon&dq=chameleon&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com.tw/books?id=vFwaAQAAMAAJ&dq=chameleon&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Chameleon.html?hl=&id=vFwaAQAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "TW",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "TW",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=vFwaAQAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Barbara Erasmus. pluck the last \u003cb\u003echameleon\u003c/b\u003e from its blackening branch and carry it to safety across the mighty river . As a reward , the \u003cb\u003echameleon\u003c/b\u003e offered him an animal of his own to keep and use for all his future needs . Man chose the&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "UYRxAAAAMAAJ",
+      "etag": "ymUvQOxja/I",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/UYRxAAAAMAAJ",
+      "volumeInfo": {
+        "title": "The Chinese Chameleon",
+        "subtitle": "An Analysis of European Conceptions of Chinese Civilization",
+        "authors": [
+          "Raymond Dawson"
+        ],
+        "publisher": "London ; New York [etc.] : Oxford U.P",
+        "publishedDate": "1967",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015054063436"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 284,
+        "printType": "BOOK",
+        "categories": [
+          "China"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.3.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=UYRxAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=UYRxAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.tw/books?id=UYRxAAAAMAAJ&q=chameleon&dq=chameleon&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com.tw/books?id=UYRxAAAAMAAJ&dq=chameleon&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Chinese_Chameleon.html?hl=&id=UYRxAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "TW",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "TW",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=UYRxAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... time that he reaches the end of this book the reader may feel that a \u003cb\u003echameleon\u003c/b\u003e would be a more appropriate symbol of China than the dragon . 2 &#39; Ritcheness and Plentiffullnesse &#39; : China and the 8 THE CHINESE \u003cb\u003eCHAMELEON\u003c/b\u003e."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "8lWJtD-JS_EC",
+      "etag": "4IpmxuQElWc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/8lWJtD-JS_EC",
+      "volumeInfo": {
+        "title": "Visual, Vestibular, and Mechanical Factors in Chameleon Head Movement",
+        "authors": [
+          "Martha Flanders"
+        ],
+        "publishedDate": "1984",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "MSU:31293106661592"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 152,
+        "printType": "BOOK",
+        "categories": [
+          "Chameleons"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=8lWJtD-JS_EC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=8lWJtD-JS_EC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.tw/books?id=8lWJtD-JS_EC&q=chameleon&dq=chameleon&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com.tw/books?id=8lWJtD-JS_EC&dq=chameleon&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Visual_Vestibular_and_Mechanical_Factors.html?hl=&id=8lWJtD-JS_EC"
+      },
+      "saleInfo": {
+        "country": "TW",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "TW",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=8lWJtD-JS_EC&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003echameleon\u003c/b\u003e decides how far to shoot its tongue by accommodation ( focusing ) rather than triangulation ( as one might expect ) ( Harkness , 1977 ) . The \u003cb\u003echameleon\u003c/b\u003e has a deep convexiclivate fovea that acts as a focus indicator ( Harkness&nbsp;..."
+      }
+    }
+  ]
+}
